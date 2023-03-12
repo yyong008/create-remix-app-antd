@@ -53,7 +53,7 @@ create remix app with and
 | @remix-run/dev           | 1.14.0  |
 | @remix-run/eslint-config | 1.14.0  |
 | eslint                   | 8.27.0  |
-
+| remix-utils              | 6.0.0   |
 ## react deps
 
 | packages name    | version |
@@ -80,7 +80,7 @@ create remix app with and
 }
 ```
 
-## problem
+## remix-utils
 
-`Component: InputNumber` use rc-util `useMobile`， but useMobile hooks call `useLayoutEffect`, this problem can gn a warning in react-dom, no server use `useLayoutEffect` is invalid.
+Use the ClientOnly component to work around antd in the component using the useLayoutEffect hook function.
 
